@@ -20,7 +20,7 @@ c = n % 10;
 
 if (c > 5)
 {
-	printf(" Last digit of %d and is greater than 5\n", n, c);
+	printf"("Last digit of %d and is greater than 5\n", n, c);
 }
 else if (c == 0)
 {
