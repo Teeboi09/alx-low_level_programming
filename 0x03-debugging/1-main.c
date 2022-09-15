@@ -6,6 +6,12 @@
  */
 int main(void)
 {
+/*
+ *while (i < 10)
+ *{
+ *putchar(i);
+ *}
+ */
 int i;
 
 printf("Infinite loop incoming :(\n");
