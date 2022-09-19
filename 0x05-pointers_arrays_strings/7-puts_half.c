@@ -15,8 +15,10 @@ void puts_half(char *str)
 
 		int n;
 		int start;
+
 		length = get_length(str);
-		if (length % 2 != 0)
+
+	if (length % 2 != 0)
 	{
 	n = (length - 1) / 2;
 											start = length - n;
@@ -27,13 +29,14 @@ void puts_half(char *str)
 	}
 	}
 	else
+
 	{
 		n = length / 2;
 												start = length - n;
 		while (str[start] != '\0')
 	{
-											_putchar(str[start]);
-											start++;
+		_putchar(str[start]);
+												start++;
 	}
 	_putchar('\n');
 }
@@ -49,9 +52,10 @@ int get_length(char *str)
 		int length;
 
 		int i;
-		i = 0;
-		length = 0;
-		while (str[i] != '\0')
+
+	i = 0;
+length = 0;
+	while (str[i] != '\0')
 	{
 		++length;
 		i++;
