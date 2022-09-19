@@ -8,35 +8,32 @@ int get_length(char *);
  *
  * Return: void
  */
-
 void puts_half(char *str)
 {
-		int length;
+	int length;
+	int n;
+	int start;
 
-		int n;
-		int start;
-
-		length = get_length(str);
-
+	length = get_length(str);
 	if (length % 2 != 0)
 	{
-	n = (length - 1) / 2;
-											start = length - n;
-	while (str[start] != '\0')
-	{
-		_putchar(str[start]);
-		start++;
-	}
+		n = (length - 1) / 2;
+		start = length - n;
+		while (str[start] != '\0')
+		{
+			_putchar(str[start]);
+			start++;
+		}
 	}
 	else
-
 	{
 		n = length / 2;
-												start = length - n;
+		start = length - n;
 		while (str[start] != '\0')
-	{
-		_putchar(str[start]);
-												start++;
+		{
+			_putchar(str[start]);
+			start++;
+		}
 	}
 	_putchar('\n');
 }
@@ -49,16 +46,16 @@ void puts_half(char *str)
  */
 int get_length(char *str)
 {
-		int length;
-
-		int i;
+	int length;
+	int i;
 
 	i = 0;
-length = 0;
+	length = 0;
 	while (str[i] != '\0')
 	{
 		++length;
 		i++;
 	}
+
 	return (length);
 }
