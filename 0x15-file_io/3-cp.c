@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - code
- * @ac: code
- * @av: code
+ * main - main entry point of the program
+ * @ac: count of command line arguments
+ * @av: vector holding command line arguments
  *
- * Return: code
+ * Return: Always 0 (Success)
  */
 int main(int ac, char *av[])
 {
